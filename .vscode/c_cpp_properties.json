@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/include",
-                "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/src",
-                "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/lib/BME680/src",
+                "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/include",
+                "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/src",
+                "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/lib/BME680/src",
                 "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/Wire",
                 "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/Wire/utility",
                 "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/SPI",
@@ -252,9 +252,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/include",
-                    "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/src",
-                    "/Users/freddie/Documents/PlatformIO/Projects/BME680_Test/lib/BME680/src",
+                    "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/include",
+                    "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/src",
+                    "/Users/freddie/Documents/PlatformIO/Projects/Test_BME680/lib/BME680/src",
                     "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/Wire",
                     "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/Wire/utility",
                     "/Users/freddie/.platformio/packages/framework-arduinoteensy/libraries/SPI",
