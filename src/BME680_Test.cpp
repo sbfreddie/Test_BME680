@@ -69,7 +69,8 @@ Written by Arnd <Arnd@Zanduino.Com> at https://www.github.com/SV-Zanshin
 
 #include "Arduino.h"
 #include "Zanshin_BME680.h"  // Include the BME680 Sensor library
-#include "Version.h"
+#include "Version.h"  // This has the most recent build version
+
 
 /**************************************************************************************************
 ** Declare all program constants                                                                 **
@@ -96,9 +97,7 @@ float altitude(const int32_t press, const float seaLevel)
             @return     floating point altitude in meters.
         */
 
-        static float Altitude;
-        
-        Altitude = 44330.0 * (1.0 - pow(((float)press / 100.0) / seaLevel, 0.1903));  // Convert into meters
+        static float Altitude = 44330.0 * (1.0 - pow(((float)press / 100.0) / seaLevel, 0.1903));  // Convert into meters. 
         return (Altitude);
     }  // of method altitude()
 
@@ -114,8 +113,8 @@ void setup()
 {
     Serial.begin(SERIAL_SPEED);  // Start serial port at Baud rate
 
-    Serial.println("Project version: " + String(VERSION));
-    Serial.println("Build timestamp:" + String(BUILD_TIMESTAMP));
+    Serial.println("Project version: " + String(VERSION));  // Print Project version.
+    Serial.println("Build timestamp:" + String(BUILD_TIMESTAMP));  // Print build timestamp
 
     Serial.print(F("Starting I2CDemo example program for BME680\n"));
     Serial.print(F("- Initializing BME680 sensor\n"));
